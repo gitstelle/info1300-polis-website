@@ -1,0 +1,461 @@
+@font-face {
+    font-family: "EB Garamond";
+    src: url('../fonts/EBGaramond-Regular.ttf');
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url('../fonts/EBGaramond-SemiBold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/EBGaramond-Italic.ttf");
+    font-style: italic;
+}
+
+#fellowsNotPic {
+    width:60%;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.cursorDefault{
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
+
+#desktop {
+    display: none;
+}
+
+#mobile {
+    display: block
+}
+
+html {
+    font-family: 'EB Garamond', Garamond, serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #ebe7dfff;
+}
+
+.polisLogo {
+    width: 150px;
+    transition: all .25s ease-in-out;
+}
+
+.polisLogo:hover {
+    transform: scale(1.1);
+}
+
+#homeBanner {
+    width: 100%;
+    margin: 0
+}
+
+header {
+    background-color: #122a4fff;
+
+}
+
+main {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#hamburger {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background: rgb(238, 168, 55);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+}
+
+#hamburger.active {
+    width: 275px;
+    height: 300px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+}
+
+#hamburger .menuTop {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: rgb(238, 168, 55);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    color: #122a4fff;
+    white-space: nowrap;
+    font-size: 25px;
+    justify-content: center;
+}
+
+#hamburger.active .menuTop {
+    width: calc(100% - 60px);
+    transition-delay: 0s;
+    align-items: center;
+}
+
+#mobile .navBox {
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#mobile .navBox li {
+    list-style: none;
+}
+
+#mobile .navBox li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 1em;
+    text-decoration: none;
+    color: #122a4fff;
+}
+
+#mobile .navBox li a:hover {
+    color: #4e65ff;
+}
+
+#hamburger a.menuToggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: rgb(238, 168, 55);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hamburger a.menuToggle::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #122a4fff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #122a4fff;
+    transition: 0.5s;
+}
+
+#hamburger a.menuToggle::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #122a4fff;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+#hamburger.active a.menuToggle::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #122a4fff;
+}
+
+#hamburger.active a.menuToggle::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.imgGallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgGallery img {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 100px; */
+}
+
+button {
+    background-color: transparent;
+    color: rgb(6, 65, 154);
+    font-size: 20px;
+    border: rgb(6, 65, 154) 2px solid;
+    width: 30px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    max-height: 50px;
+    cursor:pointer
+}
+
+button:hover {
+    background-color: rgb(6, 65, 154);
+    color: #ebe7dfff
+}
+
+.flexChild {
+    text-align: center;
+}
+
+#purpose p:not(.paragraph) {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#purpose p {
+    padding-bottom: 10px;
+}
+
+#committees p:not(.paragraph) {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#becomeFellow {
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(6, 65, 154);
+    border: rgb(6, 65, 154) 2px solid;
+    padding: 10px;
+    transition: all .2s ease-in;
+}
+
+#becomeFellow:hover {
+    background-color: rgb(6, 65, 154);
+    color: #ebe7dfff
+}
+
+#fellows .imgGallery {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#fellows .flexChild {
+    max-width: 45%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 40px;
+}
+
+#fellows .flexChild p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#fellows .flexParent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paragraph {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+figcaption {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main a {
+    color: rgb(6, 65, 154);
+    text-underline-offset: 4px;
+}
+
+main a:visited {
+    color: rgb(6, 65, 154);
+}
+
+.flexChild img {
+    width: 100%
+}
+
+/* flexbox row */
+@media (min-width: 1000px) {
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+    }
+
+    #desktop nav {
+        font-size: 18px;
+        display: flex;
+        padding-left: 2%;
+        padding-right: 2%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #desktop .navBox {
+        text-align: right;
+    }
+
+    #desktop .navBox li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 15px;
+        position: relative;
+    }
+
+    #desktop .navBox a {
+        color: #ebe7dfff;
+        position: relative;
+        padding-bottom: 3px;
+    }
+
+    #desktop .navBox a:not(.currentPage) {
+        text-decoration: none;
+    }
+
+    #desktop .currentPage {
+        text-decoration: underline #ebe7dfff .5px;
+        text-underline-offset: 7px;
+    }
+
+    #desktop .navBox a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: .5px;
+        bottom: 0;
+        left: 0;
+        background-color: #ebe7dfff;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    #desktop .navBox a:hover::before {
+        transform: scaleX(1);
+    }
+
+    .subnavLinks {
+        display: none;
+        position: absolute;
+        background-color:rgb(17, 48, 95);
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        transform:translateY(6px);
+        padding:10px;
+        text-align: left;
+      }
+
+      .subnavLinks li {
+        padding-bottom:5px;
+      }
+
+      .subnav:hover .subnavLinks {
+        display: block;
+      }
+
+    main {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .flexParent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flexChild {
+        max-width: 50%;
+        /* text-align: left; */
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #right {
+        width: 30%;
+        padding-left: 20px
+    }
+
+    #left {
+        width: 65%
+    }
+
+    .textJustify {
+        text-align: justify;
+        text-align-last: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #fellows .imgGallery {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .motto {
+        font-size: 25px;
+    }
+
+    #fellows .flexChild {
+        width: 20%
+    }
+
+    #fellowsNotPic {
+        column-count: 3;
+
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <script src="script/jquery-3.6.1.js"></script>
+  <script src="script/main.js"></script>
+  <title>Cornell Polis – Home</title>
+</head>
+
+<body>
+  <header id="mobile">
+    <span><a class=logoLink href="index.html"><img src="images/cutelogo1.PNG" alt="Polis logo"
+          class=polisLogo></a></span>
+    <nav id="hamburger">
+      <div class="menuTop">
+        <p id="clubName">ΠΛΣ</p>
+      </div>
+      <a href="javascript:void(0);" onClick="toggleMenu()" class="menuToggle"></a>
+      <ul class="navBox">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="purpose.html">Purpose</a></li>
+        <li><a href="fellows.html">Fellows</a></li>
+        <li><a href="committees.html">Committees</a></li>
+        <li><a href="recruitment.html">Recruitment</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header id="desktop">
+    <nav>
+      <span class=logoLink><a href="index.html"><img src="images/cutelogo1.PNG" alt="Polis logo"
+            class=polisLogo></a></span>
+      <ul class="navBox">
+        <li><a href="purpose.html">Purpose</a></li>
+        <li class="subnav"><a class="cursorDefault">Who We Are</a>
+          <ul class="subnavLinks">
+            <li><a href="fellows.html">Fellows</a></li>
+            <li><a href="committees.html">Committees</a></li>
+          </ul>
+        </li>
+        <li><a href="recruitment.html">Recruitment</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <img src="images/rectangularboard.png" alt="Rectangular Banner with graphics and Polis mission statement"
+      id="homeBanner">
+  </div>
+  <main id=home>
+    <div class=flexParent>
+      <div id="left" class="imgGallery">
+        <button id="prevButton" class="title">&#10094;</button>
+
+        <figure>
+          <img src="images/home1.JPG" alt="Cornell Polis 2022-2023">
+          <figcaption>Cornell Polis 2022-2023</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/home2.JPG" alt="silly picture of Polis">
+          <figcaption>Join Polis!</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/upenn-visit.jpeg" alt="Cornell Polis visits UPenn Polis!">
+          <figcaption>Cornell Polis visits UPenn Polis!</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/dc-alumni.jpeg" alt="Cornell Polis visits alumni in Washington DC!">
+          <figcaption>Cornell Polis visits alumni in Washington DC!</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/intermural-soccer.jpeg" alt="Polis intermural soccer!">
+          <figcaption>Polis intermural soccer!</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/big-little.jpg" alt="Big little party!">
+          <figcaption>Big little party!</figcaption>
+        </figure>
+        <button id="nextButton" class="title">&#10095;</button>
+
+        <div class="buttons">
+        </div>
+      </div>
+
+      <div id="right" class="textJustify">
+        <h1>Pi Lambda Sigma</h1>
+        <p class="motto italic">Advocates. Diplomats. Analysts. Lawyers. POLIS.</p>
+        <p class="motto">Polis is Cornell University's premier pre-government fraternity.</p>
+        <a id=becomeFellow href="recruitment.html">Become a fellow!</a>
+
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <script src="script/jquery-3.6.1.js"></script>
+  <script src="script/main.js"></script>
+  <title>Cornell Polis – Fellows</title>
+</head>
+
+<body>
+  <header id="mobile">
+    <span><a class=logoLink href="index.html"><img src="images/cutelogo1.PNG" alt="Polis logo"
+          class=polisLogo></a></span>
+    <nav id="hamburger">
+      <div class="menuTop">
+        <p id="clubName">ΠΛΣ</p>
+      </div>
+      <a href="javascript:void(0);" onClick="toggleMenu()" class="menuToggle"></a>
+      <ul class="navBox">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="purpose.html">Purpose</a></li>
+        <li><a href="fellows.html">Fellows</a></li>
+        <li><a href="committees.html">Committees</a></li>
+        <li><a href="recruitment.html">Recruitment</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header id="desktop">
+    <nav>
+      <span class=logoLink><a href="index.html"><img src="images/cutelogo1.PNG" alt="Polis logo"
+            class=polisLogo></a></span>
+      <ul class="navBox">
+        <li><a href="purpose.html">Purpose</a></li>
+        <li class="subnav"><a class="cursorDefault">Who We Are</a>
+          <ul class="subnavLinks">
+            <li><a href="fellows.html">Fellows</a></li>
+            <li><a href="committees.html">Committees</a></li>
+          </ul>
+        </li>
+        <li><a href="recruitment.html">Recruitment</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <img src="images/rectangularboard2.png" alt="Rectangular Banner with graphics and Polis logo" id="homeBanner">
+  </div>
+  <main id=fellows>
+    <h1 class="textJustifyr">Fellows</h1>
+    <p class="paragraph textJustifyr">POLIS fellows are Cornell students with a wide array of interests and backgrounds,
+      brought together and bonded by
+      our passion for public service. We are committed to promoting ethical and collective leadership, equity and
+      inclusion, and community impact, while also providing opportunities for professional growth and development.</p>
+    <div class="imgGallery">
+      <button id="prevButton" class="title">&#10094;</button>
+      <figure>
+        <img src="images/fellows1.png"
+          alt="Willow Maisel '25 with Senator Elijah Reichlin-Melnick at NYS Senate District 38th Office.">
+        <figcaption>Willow Maisel '25 with Senator Elijah Reichlin-Melnick at NYS Senate District 38th Office.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/fellows2.png" alt="Oscar Martinez-Taveras with the UN Ambassador">
+        <figcaption>Oscar Martinez-Taveras with the UN Ambassador </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/nexus-research.jpg"
+          alt="Shelby Williams presenting during her summer with nexus research scholars.">
+        <figcaption>Shelby Williams presenting during her summer with nexus research scholars.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/fellows3.png"
+          alt="Jesse Kapstad '24 with US Treasurer Janet Yellen at the US Department of the Treasury.">
+        <figcaption>Jesse Kapstad '24 with US Treasurer Janet Yellen at the US Department of the Treasury.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/fellows4.png"
+          alt="Kate Konvitz '24 at with General Joseph Votel at Business Executives for National Security.">
+        <figcaption>Kate Konvitz '24 at with General Joseph Votel at Business Executives for National Security.
+        </figcaption>
+      </figure>
+      <button id="nextButton" class="title">&#10095;</button>
+
+      <div class="buttons">
+        <!-- Slideshow controls -->
+      </div>
+    </div>
+
+    <div class="flexParent">
+      <div class="flexChild">
+        <img src="images/ezgi-yilmaz.jpeg" alt="Ezgi Yilmaz">
+        <p>Ezgi Yilmaz </p>
+        <p>President</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/sana-seif.jpeg" alt="Sana Seif">
+        <p>Sana Seif</p>
+        <p>President</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/josh-weiner.jpeg" alt="Josh Weiner">
+        <p>Josh Weiner</p>
+        <p>Co-VP of Membership</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/aleks-waledziak.jpeg" alt="Aleks Waledziak">
+        <p>Aleks Waledziak</p>
+        <p>Co-VP of Membership</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/kate-konvitz.jpeg" alt="Kate Konvitz">
+        <p>Kate Konvitz</p>
+        <p>Co-VP of Recruitment</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/willow-maisel.jpeg" alt="Willow Maisel">
+        <p>Willow Maisel</p>
+        <p>Co-VP of Recruitment</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/sharon-lee.jpeg" alt="Sharon Lee">
+        <p>Sharon Lee</p>
+        <p>Co-VP of DEI</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/grace-kwon.jpeg" alt="Grace Kwon">
+        <p>Grace Kwon</p>
+        <p>Co-VP of DEI</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/jesse-kapstad.jpeg" alt="Jesse Kapstad">
+        <p>Jesse Kapstad</p>
+        <p>VP of Programming</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/sophia-papanico.jpeg" alt="Sophia Papanico Papanicolaou">
+        <p>Sophia Papanico Papanicolaou</p>
+        <p>VP of Professional Development</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/ashley-effendy.jpeg" alt="Ashley Effendy">
+        <p>Ashley Effendy</p>
+        <p>VP of Finance</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/lia-sokol.jpeg" alt="Lia Sokol">
+        <p>Lia Sokol</p>
+        <p>Alumni Relations Co-Chair</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/hyrum-edwards.jpeg" alt="Hyrum Edwards">
+        <p>Hyrum Edwards</p>
+        <p>Alumni Relations Co-Chair</p>
+      </div>
+      <div class="flexChild">
+        <img src="images/emma-stepke.jpeg" alt="Emma Stepke">
+        <p>Emma Stepke</p>
+        <p>Expansion Chair</p>
+      </div>
+    </div>
+    <h2>Not Pictured</h2>
+    <div id="fellowsNotPic">
+      <ul>
+        <li>Louise Wang</li>
+        <li>Oscar Martinez</li>
+        <li>Akosa Nwadiogbu</li>
+        <li>Sarah Hughner</li>
+        <li>Amisha Chowdhury</li>
+        <li>Ainav Rabinowitz</li>
+        <li>Issy Saadeh</li>
+        <li>Prameela Kottapalli</li>
+        <li>Ella Knibb</li>
+        <li>Shanzai Ikhlas</li>
+        <li>Daniel Vebman</li>
+        <li>Celia Shapiro</li>
+        <li>Nina Miller</li>
+        <li>Alek Mehta</li>
+        <li>Daniel Bernstein</li>
+        <li>Daris Saskara</li>
+        <li>Brad Bogues</li>
+        <li>Charles Kim</li>
+        <li>Olivia Breitkopf</li>
+        <li>Travis Thai</li>
+        <li>Salomée Levy</li>
+        <li>Michelle Kim</li>
+        <li>Mo Islam</li>
+        <li>Victoria Rinn</li>
+        <li>Sophia Marek</li>
+        <li>Oscar Mendoza</li>
+        <li>Nabiha Qureshi</li>
+        <li>Andrew Talone</li>
+        <li>Sakiel Ruff</li>
+        <li>Alicia Gonzalez</li>
+        <li>Pareesay A</li>
+        <li>Shelby Williams</li>
+        <li>Jennifer Jang</li>
+        <li>Lucas Santiago</li>
+        <li>Nathan Eyasu</li>
+        <li>Nile Johnson</li>
+        <li>Sara Abbasi</li>
+        <li>Stephy Chen</li>
+        <li>Idey Abdi</li>
+        <li>Abigail Srulevich</li>
+        <li>Bingsong Li</li>
+        <li>Camilla Bauman</li>
+        <li>Emily Melcer </li>
+        <li>Kobe Forbes</li>
+        <li>Maddie Shapiro</li>
+        <li>Nia Butler</li>
+        <li>Prakriti Khanal</li>
+        <li>Raven Shemeles</li>
+        <li>Tae Kyu Lee</li>
+        <li>Varsha Rammohan</li>
+        <li>Yama Bazger</li>
+        <li>Yewon Kee</li>
+        <li>Hannah Irvine</li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>
